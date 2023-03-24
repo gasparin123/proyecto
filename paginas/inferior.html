@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Superior</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body {
+	background-color: #691C32;
+}
+body,td,th {
+	color: #FF0;
+}
+
+#train {
+      position: relative;
+      cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<img id="train" src="123.PNG" width="50" height="50">
+  <script>
+    train.onclick = function() {
+      let start = Date.now();
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        train.style.left = timePassed / 5 + 'px';
+
+        if (timePassed > 2000) clearInterval(timer);
+
+      }, 20);
+    }
+  </script>
+</body>
+</html>

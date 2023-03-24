@@ -1,0 +1,46 @@
+ <!DOCTYPE html>  
+ <html>
+ <style type="text/css">
+ body {
+	background-color: #003;
+	background-image: url(Goku.webp);
+}
+ body,td,th {
+	color: #CCC;
+}
+ </style>  
+ <body>  
+ <h1>Sumar dos números</h1>  
+ <p>Por favor, introduce dos números:</p>
+ <table width="659" border="0" align="center">
+   <tr>
+     <td height="63" align="center"><input id="num1"></td>
+   </tr>
+   <tr>
+     <td align="center"><p>
+       <input id="num2">
+     </p></td>
+   </tr>
+   <tr>
+     <td height="98" align="center"><button type="button" onclick="myFunction()">Sumar</button></td>
+   </tr>
+ </table>
+ <p>&nbsp;</p><br>
+ <p id="sumando"></p>  
+ <script>  
+ function myFunction() {  
+   var x,y,suma,text;  
+   x = document.getElementById("num1").value;  
+   y = document.getElementById("num2").value;  
+   if (isNaN(x) || isNaN(y)) {  
+     text = "Es necesarios introducir dos números válidos";  
+   } else {  
+     //si no ponemos parseFloat concatenaría x con y  
+     suma=parseFloat(x)+parseFloat(y);  
+     text= suma;  
+   }  
+   document.getElementById("sumando").innerHTML = text;  
+ }  
+ </script>  
+ </body>  
+ </html> 

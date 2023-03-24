@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+<title> PRACTICA 10 </title>
+<script language="javascript">
+function tablas (form){
+var xxnum=eval(form.xnum.value)
+x=1;
+y=form.xnum.value;
+while(x<=10){
+R=eval(y)*x;
+document.write(y+"*"+x+"="+R+"<br>");
+x++
+}
+}
+function xxx(){
+window.close();
+} 
+</script>
+</head>
+<body>
+<marquee bgcolor="blue" behavior=alternate>
+<i><font size=5 color="white" face="algebrian">
+TABLAS DE MULTIPLICAR
+ </font>
+ </i>
+ </marquee>
+ <br>
+ <br>
+ <form>
+ <center>
+ <table border="0" bgcolor="blue">
+ <tr>
+ <td>
+ INGRESE UN NUMERO
+ </td>
+ <td>
+ <input type="text" name="xnum"><br><br>
+ </table>
+ <input type="button" name="Generar" value="Generar" onclick="tablas(this.form)">
+<input type="button" name="salir" value="salir" onclick="xxx()">
+ </form>
+ </body>
+ </html>

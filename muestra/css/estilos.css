@@ -1,0 +1,7 @@
+body{background:#96F000;}
+section{background: rgba(255,255,255,0.6);
+box-sizing:border-box;
+float:left;
+margin:1%;
+padding:15px;}
+img{max-width:100%;}

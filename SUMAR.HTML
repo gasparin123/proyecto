@@ -1,0 +1,25 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+</head>
+<body>
+<label for="Numero1">Teclea un Número: </label>
+<input type="text" id="Numero1" onChange="sumar();"><br>
+
+<label for="Numero2">Teclea otro Número: </label>
+<input type="text" id="Numero2" onChange="sumar();"><br>
+
+<label for="Resultado">El resultado es: </label>
+<input type="text" id="Resultado" onChange="sumar();"><br>
+
+<script>
+function sumar(){
+	var Numero1=document.getElementById('Numero1').value;
+	var Numero2=document.getElementById('Numero2').value;
+	var Suma=parseInt(Numero1)+parseInt(Numero2);
+	document.getElementById('Resultado').value=Suma;
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+BODY {color:green;
+      background:violet;
+      }
+
+P {color:yellow; 
+   font-size:20px;
+   font-family:Courier;
+   font-weight:bold;
+   font-style:italic;
+   line-height:30px;
+   letter-spacing:5px;
+   text-transform:capitalize;
+   text-align:left;
+   text-indent:30px;
+  }
+section{
+      color:orange;
+      background:red;
+
+}

@@ -1,0 +1,39 @@
+body{background-image: url(../imagenes/fondo.jpg);}
+p{color:red; 
+   font-size:10px;
+   font-family:Courier;
+   border:2px;
+   border-color:blue;
+   border-style:solid;
+   width:200px; 
+   height:100px;
+   background: rgba(200,25,50,0.6); }
+.mainmenubtn {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+}
+.mainmenubtn:hover {
+    background-color: blue;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: skyblue;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: blue;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
